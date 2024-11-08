@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Agriculture Analytics App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A robust data analytics dashboard for visualizing agricultural crop data. Built with **React** and **TypeScript**, this app presents insightful data on crop yields, cultivation areas, and other metrics in a user-friendly, dynamic interface.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Data Visualization**: Interactive tables displaying crop yield metrics and cultivation area statistics.
+- **Dynamic Large Number Formatting**: Handles extremely large numbers gracefully, capping at a maximum readable value and formatting in millions (M), billions (B), or trillions (T).
+- **Responsive Design**: Adapts seamlessly to different screen sizes.
+- **Modular Component Structure**: Clean, maintainable, and reusable React components for easy updates and expansion.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+markdown
+Copy code
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation and Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Prerequisites
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Ensure you have **Node.js** and **Yarn** installed on your machine.
+
+1. **Clone the repository**:
+
+   git clone https://github.com/your-username/my-agriculture-analytics-app.git
+   cd my-agriculture-analytics-app
+Install dependencies:
+
+  yarn install
+
+Start the development server:
+
+  yarn start
+  The app will be available at http://localhost:3000.
+
+Usage
+Upon launching the app, navigate to the homepage where you can view tables of crop statistics. The data is formatted for readability, especially with large datasets. Key sections include:
+
+TableOne: Primary metrics on crop yield.
+![Table Screenshot](src/assets/TableOne.png)
+
+TableTwo: Detailed average statistics per crop type with special formatting for large values.
+![Table Screenshot](src/assets/TableTwo.png)
+
+Technologies Used
+**React with TypeScript**: Frontend framework and typing.
+**Mantine**: UI library for components and styling.
+**Yarn**: Package management and script running.
