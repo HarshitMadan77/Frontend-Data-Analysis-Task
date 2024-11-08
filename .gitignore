@@ -1,0 +1,9 @@
+# Ignore node modules
+node_modules/
+
+# Yarn lock file
+yarn.lock
+
+# Ignore build files if any
+dist/
+build/
