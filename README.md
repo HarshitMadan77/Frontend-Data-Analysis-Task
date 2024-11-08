@@ -40,7 +40,7 @@ Start the development server:
   yarn start
   The app will be available at http://localhost:3000.
 
-Usage
+**##Usage**
 Upon launching the app, navigate to the homepage where you can view tables of crop statistics. The data is formatted for readability, especially with large datasets. Key sections include:
 
 TableOne: Primary metrics on crop yield.
@@ -49,7 +49,10 @@ TableOne: Primary metrics on crop yield.
 TableTwo: Detailed average statistics per crop type with special formatting for large values.
 ![Table Screenshot](src/assets/TableTwo.png)
 
-Technologies Used
+Technologies Used:
+
 **React with TypeScript**: Frontend framework and typing.
+
 **Mantine**: UI library for components and styling.
+
 **Yarn**: Package management and script running.
